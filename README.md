@@ -1,4 +1,4 @@
 opencodeerp
 ===========
 
-a Korean Open Source ERP Project
+A Korean Open Source ERP Project
