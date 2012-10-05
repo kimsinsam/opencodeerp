@@ -1,0 +1,24 @@
+mail.smtp.host = smtp.diadorakorea.com
+mail.smtp.username = diadora@glbhkorea.com
+mail.smtp.password = 
+mail.smtp.port = 25
+mail.transport.protocol = smtp
+
+
+## JDBC Properties
+
+jdbc.driver = org.gjt.mm.mysql.Driver
+#jdbc.url = jdbc:mysql://61.78.61.176:3306/diadora
+jdbc.url = jdbc:mysql://211.36.21.112:3306/diadora
+jdbc.username = davinci
+jdbc.password = davinci
+
+#pool.initialSize = 10
+#pool.maxActive = 150
+#pool.maxIdle = 50
+#pool.minIdle = 0
+
+pool.initialSize = 1
+pool.maxActive = 1
+pool.maxIdle = 1
+pool.minIdle = 0

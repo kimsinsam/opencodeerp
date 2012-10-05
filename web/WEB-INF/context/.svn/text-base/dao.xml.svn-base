@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jee="http://www.springframework.org/schema/jee" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:util="http://www.springframework.org/schema/util" xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="
+			http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+			http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+			http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.0.xsd
+			http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+			http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.5.xsd
+            http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
+
+
+    <bean id="config" class="recruit.kimchang.com.common.Config" init-method="init">
+        <property name="configFile" value="/WEB-INF/config/config.properties" />
+    </bean>
+	
+	<bean id="memberDao" class="recruit.kimchang.com.member.MemberDao">
+        <property name="sqlSessionFactory" ref="sqlSessionFactory" />
+    </bean>
+	
+	<bean id="recruitmentFiledDao" class="recruit.kimchang.com.filed.RecruitmentFiledDao">
+        <property name="sqlSessionFactory" ref="sqlSessionFactory" />
+    </bean>
+    
+    <bean id="filedPeriodDao" class="recruit.kimchang.com.filed.FiledPeriodDao">
+        <property name="sqlSessionFactory" ref="sqlSessionFactory" />
+    </bean>
+	
+    <bean id="recruitmentSubFiledDao" class="recruit.kimchang.com.filed.RecruitmentSubFiledDao">
+        <property name="sqlSessionFactory" ref="sqlSessionFactory" />
+    </bean>
+    
+    <bean id="postDao" class="recruit.kimchang.com.post.PostDao">
+        <property name="sqlSessionFactory" ref="sqlSessionFactory" />
+    </bean>
+    
+    <bean id="resumeAcademyDao" class="recruit.kimchang.com.recruit.dao.ResumeAcademyDao">
+        <property name="sqlSessionFactory" ref="sqlSessionFactory" />
+    </bean>
+    
+    <bean id="resumeAwardDao" class="recruit.kimchang.com.recruit.dao.ResumeAwardDao">
+        <property name="sqlSessionFactory" ref="sqlSessionFactory" />
+    </bean>
+    
+    <bean id="resumeCareerDao" class="recruit.kimchang.com.recruit.dao.ResumeCareerDao">
+        <property name="sqlSessionFactory" ref="sqlSessionFactory" />
+    </bean>
+    
+    <bean id="resumeDao" class="recruit.kimchang.com.recruit.dao.ResumeDao">
+        <property name="sqlSessionFactory" ref="sqlSessionFactory" />
+    </bean>
+    
+    <bean id="resumeEtcDao" class="recruit.kimchang.com.recruit.dao.ResumeEtcDao">
+        <property name="sqlSessionFactory" ref="sqlSessionFactory" />
+    </bean>
+    
+    <bean id="resumeFamilyDao" class="recruit.kimchang.com.recruit.dao.ResumeFamilyDao">
+        <property name="sqlSessionFactory" ref="sqlSessionFactory" />
+    </bean>
+    
+    <bean id="resumeFileDao" class="recruit.kimchang.com.recruit.dao.ResumeFileDao">
+        <property name="sqlSessionFactory" ref="sqlSessionFactory" />
+    </bean>
+    
+    <bean id="resumeLanguageDao" class="recruit.kimchang.com.recruit.dao.ResumeLanguageDao">
+        <property name="sqlSessionFactory" ref="sqlSessionFactory" />
+    </bean>
+    
+    <bean id="resumeLicenseDao" class="recruit.kimchang.com.recruit.dao.ResumeLicenseDao">
+        <property name="sqlSessionFactory" ref="sqlSessionFactory" />
+    </bean>
+    
+    <bean id="resumeSpecialAcademyDao" class="recruit.kimchang.com.recruit.dao.ResumeSpecialAcademyDao">
+        <property name="sqlSessionFactory" ref="sqlSessionFactory" />
+    </bean>
+    
+    <bean id="zipFileHistoryDao" class="recruit.kimchang.com.zip.ZipFileHistoryDao">
+        <property name="sqlSessionFactory" ref="sqlSessionFactory" />
+    </bean>
+    
+    <!-- General -->
+    
+    <bean id="generalResumeDao" class="recruit.kimchang.com.general.dao.GeneralResumeDao">
+        <property name="sqlSessionFactory" ref="sqlSessionFactory" />
+    </bean>
+    
+    <bean id="generalResumeAcademyDao" class="recruit.kimchang.com.general.dao.GeneralResumeAcademyDao">
+        <property name="sqlSessionFactory" ref="sqlSessionFactory" />
+    </bean>
+    
+    <bean id="generalResumeFileDao" class="recruit.kimchang.com.general.dao.GeneralResumeFileDao">
+        <property name="sqlSessionFactory" ref="sqlSessionFactory" />
+    </bean>
+    
+    <bean id="generalResumeLanguageDao" class="recruit.kimchang.com.general.dao.GeneralResumeLanguageDao">
+        <property name="sqlSessionFactory" ref="sqlSessionFactory" />
+    </bean>
+    
+    <bean id="generalCompletedMessageDao" class="recruit.kimchang.com.general.dao.GeneralCompletedMessageDao">
+        <property name="sqlSessionFactory" ref="sqlSessionFactory" />
+    </bean>
+</beans>

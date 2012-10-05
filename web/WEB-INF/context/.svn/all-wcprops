@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/project1/!svn/ver/5/recruit_kimchang/web/WEB-INF/context
+END
+global.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/project1/!svn/ver/217/recruit_kimchang/web/WEB-INF/context/global.xml
+END
+dao.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/project1/!svn/ver/178/recruit_kimchang/web/WEB-INF/context/dao.xml
+END
+mybatis.xml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/project1/!svn/ver/5/recruit_kimchang/web/WEB-INF/context/mybatis.xml
+END
+servlet_default.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/project1/!svn/ver/5/recruit_kimchang/web/WEB-INF/context/servlet_default.xml
+END

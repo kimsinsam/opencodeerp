@@ -1,0 +1,13 @@
+httpHost = www.diadorakorea.com
+
+file.destinationDir = D:/workspace/diadora_origin/web/uploads
+
+qna.listSize = 10
+product.listSize = 12
+star.board.listSize = 12
+adver.board.listSize = 10
+news.board.listSize = 10
+store.listSize = 30
+
+admin.board.listSize = 10
+admin.product.listSize = 10

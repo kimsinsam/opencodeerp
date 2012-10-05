@@ -1,0 +1,13 @@
+log4j.rootLogger = INFO, stdout
+log4j.appender.stdout = org.apache.log4j.ConsoleAppender
+log4j.appender.stdout.layout = org.apache.log4j.PatternLayout
+log4j.appender.stdout.layout.ConversionPattern = [%c %p %d{ISO8601}] - %m%n
+
+log4j.logger.error = WARN, stdout
+log4j.additivity.error = false
+
+
+log4j.logger.java.sql.Connection=DEBUG 
+log4j.logger.java.sql.Statement=DEBUG 
+log4j.logger.java.sql.PreparedStatement=DEBUG 
+log4j.logger.java.sql.ResultSet=DEBUG
